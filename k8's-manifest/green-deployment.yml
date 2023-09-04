@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reddit-clone-green
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name:  reddit-clone-green
+  template:
+    metadata:
+      labels:
+        name:  reddit-clone-green
+    spec:
+      containers:
+      - name: reddit
+        image: shashidhar572/reddit-clone:v2
+        ports:
+        - containerPort: 3000
