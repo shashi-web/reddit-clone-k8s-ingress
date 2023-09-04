@@ -1,19 +1,19 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: reddit-clone-blue
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      name:  reddit-clone-blue
-  template:
-    metadata:
-      labels:
-        name:  reddit-clone-blue
-    spec:
-      containers:
-      - name: reddit
-        image: shashidhar572/reddit-clone:v1
-        ports:
-        - containerPort: 3000
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: reddit-clone-blue
+# spec:
+#   replicas: 2
+#   selector:
+#     matchLabels:
+#       name:  reddit-clone-blue
+#   template:
+#     metadata:
+#       labels:
+#         name:  reddit-clone-blue
+#     spec:
+#       containers:
+#       - name: reddit
+#         image: shashidhar572/reddit-clone:v1
+#         ports:
+#         - containerPort: 3000
